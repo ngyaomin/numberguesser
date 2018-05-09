@@ -23,12 +23,12 @@ guessBtn.addEventListener('click', function() {
   
   // validate input
   if(isNaN(guess) || guess < min || guess > max){
-    setMessage(`please enter a number btw ${min} and ${max}`);
+    setMessage(`please enter a number btw ${min} and ${max}`, 'red');
   }
 });
 
 // set message
-function setMessage(msg){
-  message.style.color = 'red';
+function setMessage(msg, color){
+  message.style.color = color;
   message.textContent = msg;
 }
