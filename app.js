@@ -22,7 +22,7 @@ guessBtn.addEventListener('click', function() {
   let guess = parseInt(guessInput.value);
   
   // validate input
-  if(guess === NaN || guess < min || guess > max){
+  if(isNaN(guess) || guess < min || guess > max){
     setMessage(`please enter a number btw ${min} and ${max}`);
   }
 });
