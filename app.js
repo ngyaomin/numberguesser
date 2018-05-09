@@ -18,7 +18,7 @@ minNum.textContent = min;
 maxNum.textContent = max;
 
 // play again event listener
-game.addEventListener('mousedown', function() {
+game.addEventListener('mousedown', function(e) {
   if(e.target.className === 'play-again'){
     window.location.reload();
   }
