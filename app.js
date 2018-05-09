@@ -51,6 +51,7 @@ function gameOver(won, msg) {
   
   guessInput.disabled = true;
   guessInput.style.borderColor = color;
+  message.style.color = color;
   setMessage(msg);
 }
 
