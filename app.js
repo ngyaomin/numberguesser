@@ -41,7 +41,7 @@ guessBtn.addEventListener('click', function() {
       guessInput.style.borderColor = 'red';
       setMessage(`Game Over, you lost. the correct number was ${winningNum}`, 'red');
     } else {
-      
+      setMessage(`${guess} is not the correct number, ${guessLeft} guesses left`);
     }
   }
   
