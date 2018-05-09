@@ -25,10 +25,25 @@ guessBtn.addEventListener('click', function() {
   if(isNaN(guess) || guess < min || guess > max){
     setMessage(`please enter a number btw ${min} and ${max}`, 'red');
   }
+  
+  // check to see if is winning Number
+  if(guess  === winningNum){
+    guessInput.disabled = true;
+    guessInput.style.borderColor = 'green';
+    setMessage(`${winningNum} is the correct number`, 'green');
+    
+  } else {
+    
+  }
+  
 });
+
+  
 
 // set message
 function setMessage(msg, color){
   message.style.color = color;
   message.textContent = msg;
 }
+
+
