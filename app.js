@@ -26,3 +26,9 @@ guessBtn.addEventListener('click', function() {
     setMessage(`please enter a number btw ${min} and ${max}`);
   }
 });
+
+// set message
+function setMessage(msg){
+  message.textContent = msg;
+  
+}
