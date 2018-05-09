@@ -19,5 +19,5 @@ maxNum.textContent = max;
 
 //listen for guess
 guessBtn.addEventListener('click', function() {
-  console.log(guessInput.value);
+  let guess = parseInt(guessInput.value);
 });
